@@ -1,13 +1,7 @@
 <template>
-    <div>
-
-    </div>
+  <p class="text-blue-500">Hello sign up!</p>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>
