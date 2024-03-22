@@ -1,9 +1,12 @@
-# Vue 3 + TypeScript + Vite
+# Cutify Website
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is Vue.js project, bootstrapped using Vite Frontend tooling.
 
-## Recommended Setup
+Steps to setup the project locally.
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+1. Clone the repo
+2. Make sure Node runtime and npm are properly installed on your PC
+3. Navigate into the project folder and run the command, `npm install`, to download the dependencies.
+4. Lastly, run the command `npm run dev`, and navigate the `http://localhost:8080` in your favourite browser to view the project.
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+The live version can be seen here, `https://cutify-web-app.vercel.app/`
