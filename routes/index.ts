@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeComponent from "../src/pages/HomeComponent.vue";
-import ContactComponent from "../src/pages/ContactComponent.vue";
-import BlogComponent from "../src/pages/BlogComponent.vue";
-import LoginComponent from "../src/pages/LoginComponent.vue";
-import RegisterComponent from "../src/pages/RegisterComponent.vue";
+import HomeComponent from "@/pages/HomeComponent.vue";
+import ServicesComponent from "@/pages/ServicesComponent.vue";
+import TestimonialsComponent from "@/pages/TestimonialsComponent.vue";
+import ContactComponent from "@/pages/ContactComponent.vue";
+import BlogComponent from "@/pages/BlogComponent.vue";
+import LoginComponent from "@/pages/LoginComponent.vue";
+import RegisterComponent from "@/pages/RegisterComponent.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -17,6 +19,16 @@ const router = createRouter({
             path: "/contact",
             name: "contact",
             component: ContactComponent,
+        },
+        {
+            path: "/services",
+            name: "services",
+            component: ServicesComponent,
+        },
+        {
+            path: "/testimonials",
+            name: "testimonials",
+            component: TestimonialsComponent,
         },
         {
             path: "/blog",

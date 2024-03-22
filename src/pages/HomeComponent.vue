@@ -1,10 +1,13 @@
 <template>
   <Header />
-  <p class="text-blue-500">Hello world!</p>
+  <MainSection />
+  <Footer />
 </template>
 
 <script setup lang="ts">
-import Header from "../components/Header.vue";
+import Header from "@/components/Header.vue";
+import MainSection from "@/components/MainSection.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <style scoped></style>
