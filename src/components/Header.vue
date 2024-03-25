@@ -28,7 +28,7 @@ import { Button } from "@/components/ui/button";
 }
 
 .logo {
-  @apply w-[84px] h-[60.5px] border border-black;
+  @apply w-[84px] h-[60.5px];
 }
 
 .nav {
