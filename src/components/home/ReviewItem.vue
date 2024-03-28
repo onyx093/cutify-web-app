@@ -2,13 +2,12 @@
   <div class="reviewItem">
     <div class="reviewItem__box">
       <p class="reviewText">
-        I love how convenient it is to book my favourite spa treatments through
-        this platform. The service providers are top-notch!
+        {{ review.reviewText }}
       </p>
     </div>
     <div class="authorInfo">
       <div class="authorImg">
-        <img src="../assets/img/Ellipse_8.png" alt="" />
+        <img :src="getArticleImage(review.imgSrc)" alt="" />
       </div>
       <div class="authorNameDate">
         <p class="authorName">Jessica T.</p>
@@ -18,7 +17,19 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { PropType, defineProps } from "vue";
+import type { ReviewItem } from "../../types/ReviewItem";
+
+defineProps({
+  review: {
+    type: Object as PropType<ReviewItem>,
+    required: true,
+  },
+});
+
+const getArticleImage = (theImgSrc: string) => `../src/assets/img/${theImgSrc}`;
+</script>
 
 <style scoped>
 .reviewItem {

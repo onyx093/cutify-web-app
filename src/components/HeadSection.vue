@@ -1,7 +1,11 @@
 <template>
   <div class="headSection">
-    <div class="headSection__bgImg">
-      <img class="z-0" :src="getHeadBackgroundImage(headImg)" alt="" />
+    <div class="headSection__bgImgWrapper">
+      <img
+        class="headSection__bgImg"
+        :src="getHeadBackgroundImage(headImg)"
+        alt=""
+      />
     </div>
     <div class="headSection__bgcolor">
       <p class="headText">{{ headText }}</p>
@@ -32,12 +36,16 @@ const getHeadBackgroundImage = (imgSrc: string) =>
   @apply relative w-full h-[252px] overflow-hidden;
 }
 
+.headSection__bgImgWrapper {
+  @apply relative w-full;
+}
+
 .headSection__bgImg {
-  @apply absolute -top-[238px] object-cover invisible;
+  @apply absolute -top-[238px] object-cover;
 }
 
 .headSection__bgcolor {
-  @apply w-full h-full flex items-center justify-start pl-[120px] bg-[#57AEDD] bg-opacity-60 z-50;
+  @apply absolute top-0 bottom-0 left-0 right-0 flex items-center justify-start pl-[120px] bg-[#57AEDD] bg-opacity-60;
 }
 
 .headText {

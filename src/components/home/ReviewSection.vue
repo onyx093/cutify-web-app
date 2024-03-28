@@ -9,16 +9,42 @@
         </p>
       </div>
       <div class="reviewItems">
-        <ReviewItem />
-        <ReviewItem />
-        <ReviewItem />
+        <Review v-for="review in reviews" :review="review" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import ReviewItem from "./ReviewItem.vue";
+import type { ReviewItem } from "@/types/ReviewItem";
+import Review from "./ReviewItem.vue";
+
+const reviews: ReviewItem[] = [
+  {
+    id: 1,
+    reviewText:
+      "I love how convenient it is to book my favourite spa treatments through this platform. The service providers are top-notch!",
+    imgSrc: "Ellipse_8.png",
+    authorName: "Jessica T.",
+    authorDate: "13th May 2024",
+  },
+  {
+    id: 2,
+    reviewText:
+      "I love how convenient it is to book my favourite spa treatments through this platform. The service providers are top-notch!",
+    imgSrc: "Ellipse_9.png",
+    authorName: "Jessica T.",
+    authorDate: "13th May 2024",
+  },
+  {
+    id: 3,
+    reviewText:
+      "I love how convenient it is to book my favourite spa treatments through this platform. The service providers are top-notch!",
+    imgSrc: "Ellipse_8.png",
+    authorName: "Jessica T.",
+    authorDate: "13th May 2024",
+  },
+];
 </script>
 
 <style scoped>
